@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		515C639623E39F84002EB6BD /* KnobControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 515C639423E39F84002EB6BD /* KnobControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		515C639D23E39FAB002EB6BD /* Knob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515C639C23E39FAB002EB6BD /* Knob.swift */; };
+		515C639F23E3A03E002EB6BD /* KnobRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515C639E23E3A03E002EB6BD /* KnobRenderer.swift */; };
+		515C63A123E3A0B9002EB6BD /* RotationGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515C63A023E3A0B9002EB6BD /* RotationGestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		515C639123E39F84002EB6BD /* KnobControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KnobControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		515C639423E39F84002EB6BD /* KnobControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KnobControl.h; sourceTree = "<group>"; };
 		515C639523E39F84002EB6BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		515C639C23E39FAB002EB6BD /* Knob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Knob.swift; sourceTree = "<group>"; };
+		515C639E23E3A03E002EB6BD /* KnobRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnobRenderer.swift; sourceTree = "<group>"; };
+		515C63A023E3A0B9002EB6BD /* RotationGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationGestureRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +52,9 @@
 		515C639323E39F84002EB6BD /* KnobControl */ = {
 			isa = PBXGroup;
 			children = (
+				515C639C23E39FAB002EB6BD /* Knob.swift */,
+				515C639E23E3A03E002EB6BD /* KnobRenderer.swift */,
+				515C63A023E3A0B9002EB6BD /* RotationGestureRecognizer.swift */,
 				515C639423E39F84002EB6BD /* KnobControl.h */,
 				515C639523E39F84002EB6BD /* Info.plist */,
 			);
@@ -95,6 +104,7 @@
 				TargetAttributes = {
 					515C639023E39F84002EB6BD = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				515C639F23E3A03E002EB6BD /* KnobRenderer.swift in Sources */,
+				515C63A123E3A0B9002EB6BD /* RotationGestureRecognizer.swift in Sources */,
+				515C639D23E39FAB002EB6BD /* Knob.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +273,7 @@
 		515C639A23E39F84002EB6BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2ECHQCVRLN;
@@ -276,6 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "parry-mac.KnobControl";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +299,7 @@
 		515C639B23E39F84002EB6BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2ECHQCVRLN;
