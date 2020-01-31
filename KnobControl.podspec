@@ -43,8 +43,9 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "12.0"
 
   # spec.source       = { :path => '.' }
-  spec.source       = { :git => "https://github.com/pmckinney8/test_pod.git", :tag => "#{spec.version}" }
-
+  # spec.source       = { :git => "https://github.com/pmckinney8/test_pod.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/pmckinney8/test_pod.git", :tag => "master" }
+  
   spec.source_files  = "KnobControl"
 
   spec.swift_version = "4.2"
